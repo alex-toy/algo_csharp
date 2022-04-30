@@ -1,0 +1,15 @@
+C:\sources\projets\algo_csharp\algos\algos\bin\Debug\net6.0\algos.exe
+C:\sources\projets\algo_csharp\algos\algos\bin\Debug\net6.0\algos.deps.json
+C:\sources\projets\algo_csharp\algos\algos\bin\Debug\net6.0\algos.runtimeconfig.json
+C:\sources\projets\algo_csharp\algos\algos\bin\Debug\net6.0\algos.dll
+C:\sources\projets\algo_csharp\algos\algos\bin\Debug\net6.0\algos.pdb
+C:\sources\projets\algo_csharp\algos\algos\obj\Debug\net6.0\algos.csproj.AssemblyReference.cache
+C:\sources\projets\algo_csharp\algos\algos\obj\Debug\net6.0\algos.GeneratedMSBuildEditorConfig.editorconfig
+C:\sources\projets\algo_csharp\algos\algos\obj\Debug\net6.0\algos.AssemblyInfoInputs.cache
+C:\sources\projets\algo_csharp\algos\algos\obj\Debug\net6.0\algos.AssemblyInfo.cs
+C:\sources\projets\algo_csharp\algos\algos\obj\Debug\net6.0\algos.csproj.CoreCompileInputs.cache
+C:\sources\projets\algo_csharp\algos\algos\obj\Debug\net6.0\algos.dll
+C:\sources\projets\algo_csharp\algos\algos\obj\Debug\net6.0\refint\algos.dll
+C:\sources\projets\algo_csharp\algos\algos\obj\Debug\net6.0\algos.pdb
+C:\sources\projets\algo_csharp\algos\algos\obj\Debug\net6.0\algos.genruntimeconfig.cache
+C:\sources\projets\algo_csharp\algos\algos\obj\Debug\net6.0\ref\algos.dll
