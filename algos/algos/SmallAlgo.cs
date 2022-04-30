@@ -56,5 +56,24 @@
             }
             return new int[] { 0, 0 };
         }
+
+        public static Boolean CheckString(string str)
+        {
+            List<Char> opens = new List<Char>();
+            foreach(Char c in str)
+            {
+                if(c == '(' || c == '[') opens.Add(c);
+                if(c == ')' || c == ']')
+                {
+                    if (opens.Count == 0) return false;
+                    if((c == ')' && opens[opens.Count - 1] != '(') || (c == ']' && opens[opens.Count - 1] != '['))
+                    {
+                        return false;
+                    }
+                    opens = opens.Take(opens.Count-1).ToList(); 
+                }
+            }
+            return opens.Count == 0;
+        }
     }
 }
