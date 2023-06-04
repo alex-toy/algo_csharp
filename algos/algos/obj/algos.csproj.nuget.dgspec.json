@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\sources\\projets\\algo_csharp\\algos\\algos\\algos.csproj": {}
+    "C:\\source\\algo_csharp\\algos\\algos\\algos.csproj": {}
   },
   "projects": {
-    "C:\\sources\\projets\\algo_csharp\\algos\\algos\\algos.csproj": {
+    "C:\\source\\algo_csharp\\algos\\algos\\algos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\sources\\projets\\algo_csharp\\algos\\algos\\algos.csproj",
+        "projectUniqueName": "C:\\source\\algo_csharp\\algos\\algos\\algos.csproj",
         "projectName": "algos",
-        "projectPath": "C:\\sources\\projets\\algo_csharp\\algos\\algos\\algos.csproj",
-        "packagesPath": "C:\\Users\\alex\\.nuget\\packages\\",
-        "outputPath": "C:\\sources\\projets\\algo_csharp\\algos\\algos\\obj\\",
+        "projectPath": "C:\\source\\algo_csharp\\algos\\algos\\algos.csproj",
+        "packagesPath": "C:\\Users\\alexe\\.nuget\\packages\\",
+        "outputPath": "C:\\source\\algo_csharp\\algos\\algos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,8 +22,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\nuget.pedretti.fr\\packages": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://pkgs.dev.azure.com/alexviseo/AlexNuget/_packaging/AlexeiDemoFeed/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/alexviseo/AlexNuget/_packaging/AzureCosmosHelpers/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/alexviseo/HelloWorldApp/_packaging/myFeed/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/alexviseo/_packaging/alexviseo/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -55,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

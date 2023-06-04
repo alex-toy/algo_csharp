@@ -75,5 +75,38 @@
             }
             return opens.Count == 0;
         }
+
+        public static int ClosestToZero(int[] ints)
+        {
+            int closest = ints[0];
+            int closestDist = Math.Abs(closest);
+
+            for (int i = 0; i < ints.Length; i++)
+            {
+                int current = ints[i];
+                int currentDist = Math.Abs(current);
+                if ( currentDist < closestDist || (currentDist == closestDist && current > 0) )
+                {
+                    closest = current; 
+                    closestDist = currentDist;
+                }
+            }
+
+            return closest;
+        }
+
+        public static double Approx(Point[] pts)
+        {
+            double insideDiscCount = 0;
+            for (int i = 0; i < pts.Length; i++)
+            {
+                double x = pts[i].x;
+                double y = pts[i].y;
+                double dist = Math.Sqrt( Math.Pow(x, 2) + Math.Pow(y, 2) );
+                Boolean isInsideDisc = dist <= 1;
+                if (isInsideDisc) insideDiscCount++;
+            }
+            return insideDiscCount / pts.Length * 4;
+        }
     }
 }

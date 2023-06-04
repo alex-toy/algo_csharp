@@ -18,6 +18,13 @@ namespace files
                 : files.Select(f => Path.GetFileName(f)).ToArray();
         }
 
+        public static string LocateUniverseFormula()
+        {
+            string[] dirs = Directory.GetFiles(@"/tmp/documents", "universe-formula*", System.IO.SearchOption.AllDirectories);
+
+            return dirs.Length > 0 ? dirs[0] : null;
+        }
+
         public static string PathToFile(string path, string filename, Boolean onlyPath = false)
         {
             string[] files = Directory.GetFiles(path, "*", SearchOption.AllDirectories);
