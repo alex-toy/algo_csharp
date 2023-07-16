@@ -60,17 +60,17 @@
         public static Boolean CheckString(string str)
         {
             List<Char> opens = new List<Char>();
-            foreach(Char c in str)
+            foreach (Char c in str)
             {
-                if(c == '(' || c == '[') opens.Add(c);
-                if(c == ')' || c == ']')
+                if (c == '(' || c == '[') opens.Add(c);
+                if (c == ')' || c == ']')
                 {
                     if (opens.Count == 0) return false;
-                    if((c == ')' && opens[opens.Count - 1] != '(') || (c == ']' && opens[opens.Count - 1] != '['))
+                    if ((c == ')' && opens[opens.Count - 1] != '(') || (c == ']' && opens[opens.Count - 1] != '['))
                     {
                         return false;
                     }
-                    opens = opens.Take(opens.Count-1).ToList(); 
+                    opens = opens.Take(opens.Count - 1).ToList();
                 }
             }
             return opens.Count == 0;
@@ -85,9 +85,9 @@
             {
                 int current = ints[i];
                 int currentDist = Math.Abs(current);
-                if ( currentDist < closestDist || (currentDist == closestDist && current > 0) )
+                if (currentDist < closestDist || (currentDist == closestDist && current > 0))
                 {
-                    closest = current; 
+                    closest = current;
                     closestDist = currentDist;
                 }
             }
@@ -102,11 +102,58 @@
             {
                 double x = pts[i].x;
                 double y = pts[i].y;
-                double dist = Math.Sqrt( Math.Pow(x, 2) + Math.Pow(y, 2) );
+                double dist = Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2));
                 Boolean isInsideDisc = dist <= 1;
                 if (isInsideDisc) insideDiscCount++;
             }
             return insideDiscCount / pts.Length * 4;
+        }
+
+        public static int PGCD(int a, int b)
+        {
+            int max = Math.Max(a, b);
+            int min = Math.Min(a, b);
+
+            if (min == 0) return max;
+
+            int a_mod_b = max % min;
+
+            return PGCD(b, a_mod_b);
+        }
+
+        public static int[] PGCD_Extended(int a, int b)
+        {
+            int max = Math.Max(a, b);
+            int min = Math.Min(a, b);
+
+            int u_min_2 = 1;
+            int v_min_2 = 0;
+            int c_min_2 = Math.Max(a, b);
+
+            int u_min_1 = 0;
+            int v_min_1 = 1;
+            int c_min_1 = Math.Min(a, b);
+            int q_min_1 = c_min_2 / c_min_1;
+
+            int u = u_min_2 - q_min_1 * u_min_1;
+            int v = v_min_2 - q_min_1 * v_min_1;
+            int c = u * max + v * min;
+            int q = c_min_1 / c;
+            int r = c_min_1 % c;
+
+            while (r != 0)
+            {
+                u_min_2 = u_min_1; v_min_2 = v_min_1; q_min_1 = q; u_min_1 = u; v_min_1 = v;
+                u = u_min_2 - q_min_1 * u_min_1;
+                v = v_min_2 - q_min_1 * v_min_1;
+                c_min_1 = c;
+                c = u * max + v * min;
+                q = c_min_1 / c;
+                r = c_min_1 % c;
+            }
+
+            int[] results = new int[] { u, v, c };
+            return results;
         }
     }
 }

@@ -37,12 +37,25 @@ using files;
 //int closest = SmallAlgo.ClosestToZero(data);
 //Console.WriteLine(closest);
 
-List<Point> points = new List<Point>();
-for (int i = 0; i < 10000000; i++)
-{
-    Random random = new Random();
-    Point point = new Point() { x = random.NextDouble(), y = random.NextDouble() };
-    points.Add(point);
-}
-double pi = SmallAlgo.Approx(points.ToArray());
-Console.WriteLine(pi);
+//List<Point> points = new List<Point>();
+//for (int i = 0; i < 10000000; i++)
+//{
+//    Random random = new Random();
+//    Point point = new Point() { x = random.NextDouble(), y = random.NextDouble() };
+//    points.Add(point);
+//}
+//double pi = SmallAlgo.Approx(points.ToArray());
+//Console.WriteLine(pi);
+
+//int a = 50;
+//int b = 17;
+//int results = SmallAlgo.PGCD(a, b);
+//Console.WriteLine(results);
+
+
+int a = 50;
+int b = 17;
+int[] results = SmallAlgo.PGCD_Extended(a, b);
+Console.WriteLine(results[0]);
+Console.WriteLine(results[1]);
+Console.WriteLine(results[2]);
