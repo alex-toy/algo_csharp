@@ -37,6 +37,12 @@ using files;
 //int closest = SmallAlgo.ClosestToZero(data);
 //Console.WriteLine(closest);
 
+int[] data = new int[] { 13, 16, 41, 8, 2 };
+int smallest = SmallAlgo.FindSmallestInterval(data);
+Console.WriteLine(smallest);
+int biggest = SmallAlgo.FindBiggestInterval(data);
+Console.WriteLine(biggest);
+
 //List<Point> points = new List<Point>();
 //for (int i = 0; i < 10000000; i++)
 //{
@@ -53,9 +59,12 @@ using files;
 //Console.WriteLine(results);
 
 
-int a = 50;
-int b = 17;
-int[] results = SmallAlgo.PGCD_Extended(a, b);
-Console.WriteLine(results[0]);
-Console.WriteLine(results[1]);
-Console.WriteLine(results[2]);
+//int a = 50;
+//int b = 17;
+//int[] results = SmallAlgo.PGCD_Extended(a, b);
+//Console.WriteLine(results[0]);
+//Console.WriteLine(results[1]);
+//Console.WriteLine(results[2]);
+
+Console.ReadKey();
+

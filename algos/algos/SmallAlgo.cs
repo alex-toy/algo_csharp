@@ -95,6 +95,36 @@
             return closest;
         }
 
+        public static int FindSmallestInterval(int[] ints)
+        {
+            int smallest = Math.Abs(ints[0] - ints[1]);
+            for (int k = 0; k < ints.Length - 1; k++)
+            {
+                for (int i = k + 1; i < ints.Length; i++)
+                {
+                    int currentInterval = Math.Abs(ints[i] - ints[k]);
+                    if (currentInterval < smallest) smallest = currentInterval;
+                }
+            }
+
+            return smallest;
+        }
+
+        public static int FindBiggestInterval(int[] ints)
+        {
+            int biggest = Math.Abs(ints[0] - ints[1]);
+            for (int k = 0; k < ints.Length - 1; k++)
+            {
+                for (int i = k + 1; i < ints.Length; i++)
+                {
+                    int currentInterval = Math.Abs(ints[i] - ints[k]);
+                    if (currentInterval > biggest) biggest = currentInterval;
+                }
+            }
+
+            return biggest;
+        }
+
         public static double Approx(Point[] pts)
         {
             double insideDiscCount = 0;
