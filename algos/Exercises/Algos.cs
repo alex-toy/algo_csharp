@@ -2,6 +2,20 @@
 
 public class Algos
 {
+    public bool IsPalinddrome(int x)
+    {
+        int original = x;
+        int reversed = 0;
+        while (original > 0)
+        {
+            int unit = original % 10;
+            original /= 10;
+            reversed = reversed * 10 + unit;
+        }
+
+        return reversed == x;
+    }
+
     public int[] TwoSum(int[] nums, int target)
     {
         for (int i = 0; i < nums.Length - 1; i++)
