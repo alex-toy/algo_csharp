@@ -33,7 +33,6 @@ C:\source\Csharp\algo_csharp\algos\algos\bin\Debug\net6.0\algos.deps.json
 C:\source\Csharp\algo_csharp\algos\algos\bin\Debug\net6.0\algos.runtimeconfig.json
 C:\source\Csharp\algo_csharp\algos\algos\bin\Debug\net6.0\algos.dll
 C:\source\Csharp\algo_csharp\algos\algos\bin\Debug\net6.0\algos.pdb
-C:\source\Csharp\algo_csharp\algos\algos\obj\Debug\net6.0\algos.csproj.AssemblyReference.cache
 C:\source\Csharp\algo_csharp\algos\algos\obj\Debug\net6.0\algos.GeneratedMSBuildEditorConfig.editorconfig
 C:\source\Csharp\algo_csharp\algos\algos\obj\Debug\net6.0\algos.AssemblyInfoInputs.cache
 C:\source\Csharp\algo_csharp\algos\algos\obj\Debug\net6.0\algos.AssemblyInfo.cs
@@ -43,3 +42,4 @@ C:\source\Csharp\algo_csharp\algos\algos\obj\Debug\net6.0\refint\algos.dll
 C:\source\Csharp\algo_csharp\algos\algos\obj\Debug\net6.0\algos.pdb
 C:\source\Csharp\algo_csharp\algos\algos\obj\Debug\net6.0\algos.genruntimeconfig.cache
 C:\source\Csharp\algo_csharp\algos\algos\obj\Debug\net6.0\ref\algos.dll
+C:\source\Csharp\algo_csharp\algos\algos\obj\Debug\net6.0\algos.sourcelink.json

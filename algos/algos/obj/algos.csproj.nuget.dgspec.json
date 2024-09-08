@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\source\\algo_csharp\\algos\\algos\\algos.csproj": {}
+    "C:\\source\\Csharp\\algo_csharp\\algos\\algos\\algos.csproj": {}
   },
   "projects": {
-    "C:\\source\\algo_csharp\\algos\\algos\\algos.csproj": {
+    "C:\\source\\Csharp\\algo_csharp\\algos\\algos\\algos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\source\\algo_csharp\\algos\\algos\\algos.csproj",
+        "projectUniqueName": "C:\\source\\Csharp\\algo_csharp\\algos\\algos\\algos.csproj",
         "projectName": "algos",
-        "projectPath": "C:\\source\\algo_csharp\\algos\\algos\\algos.csproj",
+        "projectPath": "C:\\source\\Csharp\\algo_csharp\\algos\\algos\\algos.csproj",
         "packagesPath": "C:\\Users\\alexe\\.nuget\\packages\\",
-        "outputPath": "C:\\source\\algo_csharp\\algos\\algos\\obj\\",
+        "outputPath": "C:\\source\\Csharp\\algo_csharp\\algos\\algos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\alexe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,10 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://pkgs.dev.azure.com/alexviseo/AlexNuget/_packaging/AlexeiDemoFeed/nuget/v3/index.json": {},
-          "https://pkgs.dev.azure.com/alexviseo/AlexNuget/_packaging/AzureCosmosHelpers/nuget/v3/index.json": {},
-          "https://pkgs.dev.azure.com/alexviseo/HelloWorldApp/_packaging/myFeed/nuget/v3/index.json": {},
-          "https://pkgs.dev.azure.com/alexviseo/_packaging/alexviseo/nuget/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -37,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -48,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -57,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

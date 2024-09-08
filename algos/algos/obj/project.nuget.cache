@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qeS+3NyMg7tnQPy1B0L6z0PG0UiV4MkF5EFROuR8f5+G27FUiXDlXThp2bHMzchX77Rhe9zB4YkIJoWSV1stOQ==",
+  "dgSpecHash": "ebFTET3CBOCnY1zDJG8NYwtjeR9I/OlBKP/IiiubV567sJ632HAfWGwP9PIOIoAKTxc4CZ+igF69kbW9Bkj0Sg==",
   "success": true,
-  "projectFilePath": "C:\\source\\algo_csharp\\algos\\algos\\algos.csproj",
+  "projectFilePath": "C:\\source\\Csharp\\algo_csharp\\algos\\algos\\algos.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
