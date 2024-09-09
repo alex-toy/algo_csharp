@@ -2,6 +2,51 @@
 
 public class Algos
 {
+    public int[] GetAverages(int[] nums, int k)
+    {
+        if (k == 0) return nums;
+
+        int span = 2 * k + 1;
+        int[] avgs = new int[nums.Length];
+        for (int i = 0; i < nums.Length; i++)
+        {
+            int lower = i - k;
+            if (lower < 0)
+            {
+                avgs[i] = -1;
+                continue;
+            }
+                
+            int upper = i + k;
+            if (upper > nums.Length - 1)
+            {
+                avgs[i] = -1;
+                continue;
+            }
+
+            int current = 0;
+            for (int j = lower; j <= upper; j++)
+            {
+                current += nums[j];
+            }
+            avgs[i] = current / span;
+        }
+
+        return avgs;
+    }
+
+    public int LargestAltitude(int[] gains)
+    {
+        int current = 0;
+        int highest = 0;
+        for (int i = 0; i < gains.Length; i++)
+        {
+            current += gains[i];
+            if (current > highest) highest = current;
+        }
+        return highest;
+    }
+
     public bool IsPalindrome(int x)
     {
         int original = x;
