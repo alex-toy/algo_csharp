@@ -12,10 +12,10 @@ Algos algo = new();
 //result = algo.TwoSum(nums, 6);
 //result = algo.TwoSumBetter(nums, 6);
 
-bool result = algo.IsPalinddrome(1569);
-result = algo.IsPalinddrome(12769);
-result = algo.IsPalinddrome(123321);
-result = algo.IsPalinddrome(12321);
+bool result = algo.IsPalindrome(1569);
+result = algo.IsPalindrome(12769);
+result = algo.IsPalindrome(123321);
+result = algo.IsPalindrome(12321);
 Console.WriteLine(result);
 
 Console.ReadLine();

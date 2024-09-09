@@ -2,7 +2,7 @@
 
 public class Algos
 {
-    public bool IsPalinddrome(int x)
+    public bool IsPalindrome(int x)
     {
         int original = x;
         int reversed = 0;
